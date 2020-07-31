@@ -1,8 +1,8 @@
 # db126_cookie_army
-Smart India Hackathon 2020 (SIH 2020) , Nodal Center - KLU , Andhra Pradesh
-
-Team Name : Cookie Army
-Team Leader : Fayazuddin Shaik
-Problem Statement Code : db126 ( from Tripura Institute of Technology )
-Nodal Center : KL University , Andhra Pradesh
-Team College : SRKR Engineering College
+Smart India Hackathon 2020 (SIH 2020) , Nodal Center - KLU , Andhra Pradesh <br>
+<hr>
+Team Name : Cookie Army <br>
+Team Leader : Fayazuddin Shaik <br>
+Problem Statement Code : db126 ( from Tripura Institute of Technology ) <br>
+Nodal Center : KL University , Andhra Pradesh <br>
+Team College : SRKR Engineering College <br>
