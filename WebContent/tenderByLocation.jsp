@@ -110,9 +110,9 @@
                             <div class="col-sm">
                                  <div class="form-group">
                                   <label for="exampleInputPoy1">State*</label>
-                                    <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="cstate" class="form-control" ></select><br>
-                                    <label for="exampleInputPoy1">District*</label>
-                                    <select id ="state" name="cdist" class="form-control" ></select>
+                                    <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="tstate" class="form-control" ></select><br>
+                                    <label for="exampleInputPoy1">City*</label>
+                                    <select id ="state" name="tcity" class="form-control" ></select>
                                     <script language="javascript">print_state("sts");</script>
                              </div>
                           </div>

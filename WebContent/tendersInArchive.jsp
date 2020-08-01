@@ -100,16 +100,16 @@
 <!--Main starts from here-->	
 		<div class="flex main">
 			<div class="jumbotron">
-                <h1 class="display-4">Tender Search By Organisation</h1>
-                <p class="lead">Please type in the Organisation Name, the search would give a list of tenders and related information based on the information entered.			</p>
+                <h1 class="display-4">Tenders in Archive</h1>
+                <p class="lead">Please type in a keyword, the search would give a list of tenders and related information that relates to the entered keyword.			</p>
                 <hr class="my-4">
                 <p class="lead">
-                  <form method="POST" action="viewTenderByOrg.jsp">
+                  <form method="POST" action="viewTendersInArchive.jsp">
                     <div class="container">
                         <div class="form-group">
-                              <label for="exampleInputClg1">Organisation Name*</label>
-                              <input type="text" class="form-control" name="torg" id="exampleInputClg1"  aria-describedby="colHelp" placeholder="Organisation Name" required>
-                              <small id="emailHelp" class="form-text text-muted">Enter Full Name of Organisation</small>
+                              <label for="exampleInputClg1">Enter Keyword*</label>
+                              <input type="text" class="form-control" name="keyword" id="exampleInputClg1"  aria-describedby="colHelp" placeholder="Enter a keyword" required>
+                              <small id="emailHelp" class="form-text text-muted">Enter the keyword!</small>
                        </div>
                      </div>  
                     &nbsp; &nbsp; <hr class="my-4">
