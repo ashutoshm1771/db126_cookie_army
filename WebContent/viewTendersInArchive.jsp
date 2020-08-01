@@ -99,33 +99,43 @@
 <!--Main starts from here-->	
 		<div class="flex main">
 			<div class="jumbotron">
-                <h1 class="display-4">Tenders Announcements</h1>
-                <p class="lead">Announcements for tenders from the past, present and future are displayed here.</p>
+                <h1 class="display-4">Related Tenders</h1>
+                <p class="lead">Tenders classified!</p>
                 <hr class="my-4">
                 <p class="lead">
                     <div class="card text-center">
                         <div class="card-header">
-                            Announcements
-                            <small id="emailHelp" class="form-text text-muted">Sorted by date!</small>
+                            Tenders
+                        </div>
+                        <div class="home-container">
+                            <div class="flex item-1"> Tender Title</div>
+                            <div class="flex item-2"> Reference No</div>
+                            <div class="flex item-3"> Closing Date</div>
+                            <div class="flex item-4"> Bid Opening Date</div>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">
-                                <%	
-                                    Class.forName("com.mysql.jdbc.Driver");
-                                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
-                                    Statement st = con.createStatement();
-                                    ResultSet rs;
-                                    rs = st.executeQuery("select * from announcements ");
-                                    while(rs.next())
-                                    {
-                                    out.print
-                                    (
-                                        rs.getString(1)+"<br>"
-                                    );
-                                    }
-                                    con.close();
-                                %>
-                            </p>
+                            <%	
+							Class.forName("com.mysql.jdbc.Driver");
+							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
+                            Statement st = con.createStatement();
+                            String key=request.getParameter("keyword");
+							ResultSet rs;
+							rs = st.executeQuery("select * from tenders where tenderTitle like '%key%' and tenderDescription like '%key%'");
+							while(rs.next())
+							{
+							out.print
+							(
+									"<div class='home-container-1'>"+
+					                        "<div class='flex item-1'>"+rs.getString(1)+"</div>"+
+					                        "<div class='flex item-2'>"+rs.getString(2)+"</div>"+
+					                        "<div class='flex item-3'>"+rs.getString(3)+"</div>"+
+					                        "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
+					                    "</div>"
+								);
+							}
+							
+							con.close();
+						%>
                         </div>
                     </div>
                 </p>

@@ -102,7 +102,7 @@
                 <h1 class="display-4">Cancelled Tenders</h1>
                 <p class="lead">Those tenders which are cancelled.</p>
                 <hr class="my-4">
-                <div class="card">
+                <div class="card text-center">
                     <div class="card-header">
                         Cancelled
                     </div>
