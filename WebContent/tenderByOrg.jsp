@@ -99,61 +99,28 @@
 <% session.removeAttribute("username"); %>
 <!--Main starts from here-->	
 		<div class="flex main">
-			<div class="card text-center">
-				<div class="card-header">
-					<h4>Latest Tender</h4>
-				</div>
-				<div class="home-container">
-					<div class="flex item-1"> Tender Title</div>
-					<div class="flex item-2"> Reference No</div>
-					<div class="flex item-3"> Closing Date</div>
-					<div class="flex item-4"> Bid Opening Date</div>
-				</div>
-				
-					<div class="card-body">
-					<marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> <p class="card-text">
-						p
-					</p></marquee>
-					</div>
-			</div><br>
-			<div class="card text-center">
-				<div class="card-header" >
-					<h4>Latest Corrigendums</h4>
-				</div>
-				<div class="home-container">
-					<div class="flex item-1"> Tender Title</div>
-					<div class="flex item-2"> Reference No</div>
-					<div class="flex item-3"> Closing Date</div>
-					<div class="flex item-4"> Bid Opening Date</div>
-				</div>
-				
-					<div class="card-body">
-					<marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> <p class="card-text">
-						o
-					</p></marquee>
-					</div>
-			</div>
+			<div class="jumbotron">
+                <h1 class="display-4">Tender Search By Organisation</h1>
+                <p class="lead">Please type in the Organisation Name, the search would give a list of tenders and related information based on the information entered.			</p>
+                <hr class="my-4">
+                <p class="lead">
+                  <form method="POST" action="viewTenderByOrg.jsp">
+                    <div class="container">
+                        <div class="form-group">
+                              <label for="exampleInputClg1">Organisation Name*</label>
+                              <input type="text" class="form-control" name="nameOfPartners" id="exampleInputClg1"  aria-describedby="colHelp" placeholder="Organisation Name" required>
+                              <small id="emailHelp" class="form-text text-muted">Enter Full Name of Organisation</small>
+                       </div>
+                     </div>  
+                    &nbsp; &nbsp; <hr class="my-4">
+                       <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;	<button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </p>
+              </div>
         </div>
 <!--Login starts from here-->	
-		<div class="flex login">
-                <form class="login-form">
-                    <div class="card-header"><h2>Login</h2></div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                    </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                                <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-                                &nbsp; &nbsp; <a href="newUserReg.jsp">New User? Register Here!</a><br><br>&nbsp; &nbsp;
-                                <a href="onlineBidderEnrollment.jsp">Online Bidder Enrollment</a><br><br>&nbsp; &nbsp;
-                                <button type="submit" class="btn btn-primary">Login</button>
-                                <br><br>
-                    </form>
-        </div>
+<div class="flex login"></div>
 </div>
 <footer class="footer-box">
     <div class="container">

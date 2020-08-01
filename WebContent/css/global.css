@@ -26,7 +26,8 @@ body{
             /*flex:2;*/
             margin-left: 20px;
             widows: 400px;
-            width: 1550px ;
+			width: 1550px ;
+			margin-right: 20px;
 		}
 		.logo
 		{
