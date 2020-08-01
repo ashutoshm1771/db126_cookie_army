@@ -99,31 +99,90 @@
 <!--Main starts from here-->	
 		<div class="flex main">
 			<div class="jumbotron">
-                <h1 class="display-4">Tender Search By Location</h1>
-                <p class="lead">Please type in the location, the search would give a list of tenders and related information based on the location entered.			</p>
+                <h1 class="display-4">Cancelled Tenders</h1>
+                <p class="lead">Those tenders which are cancelled.</p>
                 <hr class="my-4">
-                <p class="lead">
-                  <form method="POST" action="viewTenderByLocation.jsp">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm">
-                                 <div class="form-group">
-                                  <label for="exampleInputPoy1">State*</label>
-                                    <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="tstate" class="form-control" ></select><br>
-                                    <label for="exampleInputPoy1">City*</label>
-                                    <select id ="state" name="tcity" class="form-control" ></select>
-                                    <script language="javascript">print_state("sts");</script>
-                             </div>
-                          </div>
-                     </div>
-                    </div>  
-                    &nbsp; &nbsp; <hr class="my-4">
-                       <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;	<button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-                </p>
+                <div class="card">
+                    <div class="card-header">
+                        Cancelled
+                    </div>
+                    <div class="home-container">
+                        <div class="flex item-1"> Tender Title</div>
+                        <div class="flex item-2"> Reference No</div>
+                        <div class="flex item-3"> Closing Date</div>
+                        <div class="flex item-4"> Bid Opening Date</div>
+                    </div>
+                    
+                        <div class="card-body">
+                        <marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> 
+                            <p class="card-text">
+                                <%	
+                                    Class.forName("com.mysql.jdbc.Driver");
+                                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
+                                    Statement st = con.createStatement();
+                                    ResultSet rs;
+                                    rs = st.executeQuery("select * from tenderdetails where tenderStatus='cancelled'");
+                                    while(rs.next())
+                                    {
+                                    out.print
+                                    (
+                                            "<div class='home-container-1'>"+
+                                                    "<div class='flex item-1'>"+rs.getString(1)+"</div>"+
+                                                    "<div class='flex item-2'>"+rs.getString(2)+"</div>"+
+                                                    "<div class='flex item-3'>"+rs.getString(3)+"</div>"+
+                                                    "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
+                                                "</div>"
+                                        );
+                                    }
+                                    con.close();
+                                %>
+                            </p>
+                        </marquee>
+                        </div>
+                </div>
+                <div class="jumbotron">
+                    <h1 class="display-4">Retendered List</h1>
+                    <p class="lead">Those tenders which are Retendered.</p>
+                    <hr class="my-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Retendered
+                        </div>
+                        <div class="home-container">
+                            <div class="flex item-1"> Tender Title</div>
+                            <div class="flex item-2"> Reference No</div>
+                            <div class="flex item-3"> Closing Date</div>
+                            <div class="flex item-4"> Bid Opening Date</div>
+                        </div>
+                        
+                            <div class="card-body">
+                            <marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> 
+                                <p class="card-text">
+                                    <%	
+                                        Class.forName("com.mysql.jdbc.Driver");
+                                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
+                                        Statement st = con.createStatement();
+                                        ResultSet rs;
+                                        rs = st.executeQuery("select * from tenderdetails where tenderStatus='retendered'");
+                                        while(rs.next())
+                                        {
+                                        out.print
+                                        (
+                                                "<div class='home-container-1'>"+
+                                                        "<div class='flex item-1'>"+rs.getString(1)+"</div>"+
+                                                        "<div class='flex item-2'>"+rs.getString(2)+"</div>"+
+                                                        "<div class='flex item-3'>"+rs.getString(3)+"</div>"+
+                                                        "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
+                                                    "</div>"
+                                            );
+                                        }
+                                        con.close();
+                                    %>
+                                </p>
+                            </marquee>
+                            </div>
+                    </div>
               </div>
-        </div>
 <!--Login starts from here-->	
 <div class="flex login"></div>
 </div>

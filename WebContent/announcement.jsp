@@ -99,28 +99,35 @@
 <!--Main starts from here-->	
 		<div class="flex main">
 			<div class="jumbotron">
-                <h1 class="display-4">Tender Search By Location</h1>
-                <p class="lead">Please type in the location, the search would give a list of tenders and related information based on the location entered.			</p>
+                <h1 class="display-4">Tenders Announcements</h1>
+                <p class="lead">Announcements for tenders from the past, present and future are displayed here.</p>
                 <hr class="my-4">
                 <p class="lead">
-                  <form method="POST" action="viewTenderByLocation.jsp">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm">
-                                 <div class="form-group">
-                                  <label for="exampleInputPoy1">State*</label>
-                                    <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="tstate" class="form-control" ></select><br>
-                                    <label for="exampleInputPoy1">City*</label>
-                                    <select id ="state" name="tcity" class="form-control" ></select>
-                                    <script language="javascript">print_state("sts");</script>
-                             </div>
-                          </div>
-                     </div>
-                    </div>  
-                    &nbsp; &nbsp; <hr class="my-4">
-                       <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;	<button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
+                    <div class="card">
+                        <div class="card-header">
+                            Announcements
+                            <small id="emailHelp" class="form-text text-muted">Sorted by date!</small>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <%	
+                                    Class.forName("com.mysql.jdbc.Driver");
+                                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
+                                    Statement st = con.createStatement();
+                                    ResultSet rs;
+                                    rs = st.executeQuery("select * from announcements ");
+                                    while(rs.next())
+                                    {
+                                    out.print
+                                    (
+                                        rs.getString(1)+"<br>"
+                                    );
+                                    }
+                                    con.close();
+                                %>
+                            </p>
+                        </div>
+                    </div>
                 </p>
               </div>
         </div>
