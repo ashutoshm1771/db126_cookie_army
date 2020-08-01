@@ -10,7 +10,7 @@ Team College : SRKR Engineering College <br>
 Team Members Name:<br>
 Fayazuddin Shaik<br>
 Hanifa Shaik<br>
-Tulasi Devi Siddanik<br>
-Sai Sumanthk<br>
-Teja Krishnak<br>
-Ashutosh Mishrak<br>
+Tulasi Devi Siddani<br>
+Sai Sumanth<br>
+Teja Krishna<br>
+Ashutosh Mishra<br>
