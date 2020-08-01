@@ -85,73 +85,31 @@
 </div>
 	<div class="main-body">
 <!--Aside starts from here-->	
-	<div class="flex aside">
-		<input type="button" class="links" value="Home" onclick="window.location.href = 'index.jsp';"></button><br>
-		<input type="button" class="links" value="Nodal Officer Login" onclick="window.location.href = 'mislogin.jsp';"></button><br>
-		<input type="button" class="links" value="Tender By Location" onclick="window.location.href = 'tenderByLocation.jsp';"></button><br>
-		<input type="button" class="links" value="Tender By Organisation" onclick="window.location.href = 'tenderByOrg.jsp';"></button><br>
-		<input type="button" class="links" value="Tender By Classification" onclick="window.location.href = 'tenderByClass.jsp';"></button><br>
-		<input type="button" class="links" value="Tenders in Archive" onclick="window.location.href = 'tendersInArchive.jsp';"></button><br>
-		<input type="button" class="links" value="Announcements" onclick="window.location.href = 'announcement.jsp';"></button><br>
-		<input type="button" class="links" value="Cancelled/Retendered" onclick="window.location.href = 'cancelled.jsp';"></button><br>
-    </div>
-<% session.removeAttribute("username"); %>
+	    <div class="flex aside">
+
+        </div>
 <!--Main starts from here-->	
 		<div class="flex main">
-			<div class="card text-center">
-				<div class="card-header">
-					<h4>Latest Tender</h4>
-				</div>
-				<div class="home-container">
-					<div class="flex item-1"> Tender Title</div>
-					<div class="flex item-2"> Reference No</div>
-					<div class="flex item-3"> Closing Date</div>
-					<div class="flex item-4"> Bid Opening Date</div>
-				</div>
-				
-					<div class="card-body">
-					<marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> <p class="card-text">
-						p
-					</p></marquee>
-					</div>
-			</div><br>
-			<div class="card text-center">
-				<div class="card-header" >
-					<h4>Latest Corrigendums</h4>
-				</div>
-				<div class="home-container">
-					<div class="flex item-1"> Tender Title</div>
-					<div class="flex item-2"> Reference No</div>
-					<div class="flex item-3"> Closing Date</div>
-					<div class="flex item-4"> Bid Opening Date</div>
-				</div>
-				
-					<div class="card-body">
-					<marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> <p class="card-text">
-						o
-					</p></marquee>
-					</div>
-			</div>
+			<form class="login-form" method="POST" action="empPortal.jsp">
+                <div class="card-header"><h2>Nodal Officer Login</h2></div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" name="empid" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" name="emppass" id="exampleInputPassword1">
+                    </div>
+                            <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
+                            &nbsp; &nbsp; <a href="empReg.jsp">New? Register Here!</a><br><br>&nbsp; &nbsp;
+                            <button type="submit" class="btn btn-primary">Login</button>
+                            <br><br>
+                </form>
         </div>
 <!--Login starts from here-->	
 		<div class="flex login">
-                <form class="login-form" method="POST" action="bidPortal.jsp">
-                    <div class="card-header"><h2>Login</h2></div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" name="bid" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                    </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" name="bpass" id="exampleInputPassword1">
-                        </div>
-                                <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-                                &nbsp; &nbsp; <a href="bidReg.jsp">New User? Register Here!</a><br><br>&nbsp; &nbsp;
-                                <a href="onlineBidderEnrollment.jsp">Online Bidder Enrollment</a><br><br>&nbsp; &nbsp;
-                                <button type="submit" class="btn btn-primary">Login</button>
-                                <br><br>
-                    </form>
+                
         </div>
 </div>
 <footer class="footer-box">
