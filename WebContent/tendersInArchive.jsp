@@ -87,7 +87,7 @@
 <!--Aside starts from here-->	
 	<div class="flex aside">
 		<input type="button" class="links" value="Home" onclick="window.location.href = 'index.jsp';"></button><br>
-		<input type="button" class="links" value="MIS Reports" onclick="window.location.href = 'mislogin.jsp';"></button><br>
+		<input type="button" class="links" value="Nodal Officer Login" onclick="window.location.href = 'mislogin.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Location" onclick="window.location.href = 'tenderByLocation.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Organisation" onclick="window.location.href = 'tenderByOrg.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Classification" onclick="window.location.href = 'tenderByClass.jsp';"></button><br>
