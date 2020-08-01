@@ -85,7 +85,7 @@
 </div>
 	<div class="main-body">
 <!--Aside starts from here-->	
-	<div class="flex aside">
+	<div class="flex aside" style="margin-left: 50px;">
 		<input type="button" class="links" value="Home" onclick="window.location.href = 'index.jsp';"></button><br>
 		<input type="button" class="links" value="Nodal Officer Login" onclick="window.location.href = 'mislogin.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Location" onclick="window.location.href = 'tenderByLocation.jsp';"></button><br>

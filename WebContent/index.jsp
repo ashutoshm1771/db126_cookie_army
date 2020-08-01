@@ -6,7 +6,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Etender</title>
+  <title>Etender</title>
+  <link rel="stylesheet" href="css/global.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -22,7 +23,178 @@
 	  });
 	};
   </script>
-  <link rel="stylesheet" href="css/global.css">
+ <style>
+   body{
+        background-color: beige;
+    }
+    .navbar
+		{
+			display: flex;
+			width: 100%;
+            background-color: black;
+			border: 2px dotted black;
+		}
+		
+        .left-img,.right-img{
+            width:20px;
+        };
+        
+        .item-12{
+                flex:1;
+        }
+        .item-13{
+                flex:2;
+        }
+        .item-14{
+            flex:1;
+        }
+    	.main{
+            /*flex:2;*/
+            margin-left: 20px;
+            widows: 400px;
+			width: 1550px ;
+			margin-right: 20px;
+		}
+		.logo
+		{
+			height: 100px;
+		}
+		.logo1
+		{
+			height: 100px;
+			float:right;
+		}
+		.main-body{
+            display: flex;
+			margin-top:10px;		
+        }
+
+		.form-group{
+			margin-left: 15px;
+		}
+		input[type=email],input[type=password]
+		 	{
+			width: 80%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			}
+		.aside{
+            margin-left: 170px;
+			width:fit-content;
+		}
+        
+		/*Login container */
+		.login{
+            margin-left: 20px;
+            width: 900px ;
+		}
+		.login-form{
+			background-color: #e8e8e8;
+			width: 60%;
+			margin-left: 10px;
+			margin-right: 10px;
+			float: center;
+		}
+        /*Links container */
+		.links
+		{
+			border-radius: 10px;
+            margin: 5px 0px;
+			padding: 5PX;
+			width: 	250PX;
+		}
+
+        /*Captcha container */
+		.g-recaptcha{
+			margin-left: 5px;
+			width:auto;
+		}
+
+        /*Date container */
+		.datass
+		{
+			display:flex;
+			color: white;
+			width: 100%;
+            font-size: 20px;
+            font-weight: bolder;
+            height: 30px;
+			background-color: maroon;
+		}
+        .datas1
+		{
+			flex: 1;
+		}
+		.datas2
+		{
+			flex: 8;
+        }
+
+        /*HOme container */
+		.home-container
+		{
+			display: flex;
+			width: 100%;
+			border: 2px solid black;
+		}
+
+
+        /*HOme container-1 */
+		.home-container-1
+		{
+			display: flex;
+			width: 100%;
+			border: 2px dotted black;
+		}
+		.item-1
+		{
+			flex: 1;
+		}
+		.item-2
+		{
+			flex: 1;
+		}
+		.item-3
+		{
+			flex: 1;
+		}
+		.item-4
+		{
+			flex: 1;
+		}
+        .menu{
+            display: block;
+            border:2px solid crimson;
+            background-color: crimson;
+            color:white;    
+            align-items: center;
+            
+        }
+        .Menu{
+            text-decoration: none;
+            color: white;
+        }
+
+        .Menu:hover{
+            text-decoration: none;
+            color: white;
+        }
+        
+        .footer-box{
+            bottom: 0;
+            position:fixed;
+            width: 1000px;
+            margin-left: 17%;
+        }
+		@media only screen and (max-width: 600px) 
+		{
+			body{
+				font-size: 2em;
+			}
+			
+		}
+ </style>
 </head>
 <body>
 <div class="navbar">

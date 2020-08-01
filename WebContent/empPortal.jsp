@@ -22,7 +22,7 @@
 	  });
 	};
   </script>
-  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/global1.css">
 </head>
 <body>
 <div class="navbar">
@@ -83,35 +83,32 @@
       </span>		
 </span>
 </div>
-	<div class="main-body">
 <!--Aside starts from here-->	
-	    <div class="flex aside">
-
-        </div>
+        
 <!--Main starts from here-->	
-		<div class="flex main" style="width: 70%; margin-left: 550px;">
-			<form class="login-form" method="POST" action="empPortal.jsp">
-                <div class="card-header"><h2>Nodal Officer Login</h2></div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" name="empid" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+<div class="jumbotron" style="width: 50%; margin-left: 450px;">
+  <div class="text-center">
+    <h1 class="display-4">Nodal Officer Portal</h1>
+    </div>
+    <div align="right"><a class="btn btn-light btn-lg" href="index.jsp" role="button">Logout</a></div>
+    <hr class="my-4">
+       <div class="container classic">
+        <div class="row row-cols-2">
+            <div class="col"> 
+                    <a class="btn btn-dark btn-lg" href="publishTender.jsp" role="button">Publish Tender</a>
+            </div>
+    
+            <div class="col">
+                <div class="text-center">
+            <a class="btn btn-dark btn-lg" href="viewTenders.jsp" role="button">View Your Tenders</a>
                 </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" name="emppass" id="exampleInputPassword1">
-                    </div>
-                            <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-                            &nbsp; &nbsp; <a href="empReg.jsp">New? Register Here!</a><br><br>&nbsp; &nbsp;
-                            <button type="submit" class="btn btn-primary">Login</button>
-                            <br><br>
-                </form>
-        </div>
-<!--Login starts from here-->	
-		<div class="flex login">
-                
-        </div>
+            </div>
+ </div>
 </div>
+</div>
+<!--Login starts from here-->	
+		
+
 <footer class="footer-box">
     <div class="container">
       <span class="text-muted">Contents owned and maintained by concerned Departments in coordination with Finance Department and Information Technology Department, Government of India.</span>
