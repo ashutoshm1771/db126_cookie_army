@@ -61,7 +61,7 @@ border-color: #337ab7;
         <form action="#" method="POST">
         <center><h3>Login</h3></center>
         <div class="log input-uname">
-            <b>Username</b>&nbsp&nbsp<input type='text' id="username" name="user" placeholder="Username"  required />
+            <b>Username</b>&nbsp&nbsp<input type='text' id="username" name="user" placeholder="User Name"  required />
         </div>
         <div class="log input-pswd">
             <b>Password</b>&nbsp&nbsp&nbsp<input type='password' id="password" name="pass" placeholder="Password" required />
