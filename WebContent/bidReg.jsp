@@ -21,7 +21,9 @@
 		'sitekey' : '6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s'
 	  });
 	};
-  </script>
+  </script>	
+	  </script>
+  
   <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
@@ -67,18 +69,7 @@
             <span>
               <a id="link1" name="link1" title="Corrigendum" class="Menu" href="/eprocure/app?page=FrontEndLatestActiveCorrigendums&amp;service=page" target="_self">Corrigendum</a>
           </span>
-          <span class="divider1" id="Insert_2_2">|</span>
-      </span><span id="For_3">
-          
-            <span>
-              <a id="link1" name="link1" title="Results of Tenders" class="Menu" href="/eprocure/app?page=ResultOfTenders&amp;service=page" target="_self">Bid Awards</a>
-          </span>
-          <span class="divider1" id="Insert_2_3">|</span>
-      </span><span id="For_4">
-          <span id="If_0_4">
-              <a id="link1" name="link1" title="CPPP Home" class="Menu" href="http://eprocure.gov.in/cppp/" target="_self">CPPP Home</a>
-            </span>
-            
+         
           
       </span>		
 </span>
@@ -108,15 +99,20 @@
                               <div class="row">
                                   <div class="col-sm">
                                            <div class="form-group">
-                                               <label for="exampleInputName1">Full Name*</label>
-                                                <input type="text" class="form-control" name="bname" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Enter your full name" required>
+                                               <label for="exampleInputName1">First Name*</label>
+                                                <input type="text" class="form-control" name="bname" pattern="[a-zA-Z]{1,}" title="enter valid name" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Enter your full name" required>
+                                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                            </div>
+                                            <div class="form-group">
+                                               <label for="exampleInputName1">Last Name*</label>
+                                                <input type="text" class="form-control" name="blname" pattern="[a-zA-Z]{1,}" title="enter valid name" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Enter your full name" required>
                                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                             </div>
                                    </div>
                                    <div class="col-sm">
                                            <div class="form-group">
                                                 <label for="exampleInputReg1">Aadhar number*</label>
-                                                <input type="text" class="form-control" name="badharno" id="exampleInputReg1"  aria-describedby="regHelp"  placeholder="Enter your Aadhar number" required>
+                                                <input type="text" class="form-control" name="badharno" pattern="[0-9]{12}" title="enter valid 12-digit aadhar no." id="exampleInputReg1"  aria-describedby="regHelp"  placeholder="Enter your Aadhar number" required>
                                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                            </div>
                                    </div>
@@ -127,7 +123,7 @@
                                 <div class="col-sm">
                                      <div class="form-group">
                                       <label for="exampleInputPoy1">Phone ISD Code*</label>
-                                      <input type="number" class="form-control" name="bisdcode" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Phone ISD Code" required>
+                                      <input type="number" pattern="[1-9]{2}" class="form-control" name="bisdcode" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Phone ISD Code" required>
                                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small> -->
                                       </div>
                                  </div>
@@ -135,7 +131,7 @@
                                        <div class="form-group">
                                               <label for="exampleInputPoy1">Phone Number*</label>
                                               <div class="form-row">
-                                              <input type="text" class="form-control" name="bphno" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Phone Number" required>
+                                              <input type="text" class="form-control" pattern="[0-9]{10}" title="enter 10-digit valid number" name="bphno" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Phone Number" required>
                                                <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small>
                                               </div>
                                         </div>
@@ -147,14 +143,14 @@
                               <div class="col-sm">
                                        <div class="form-group">
                                              <label for="exampleInputmail1">Email Id*</label>
-                                             <input type="email" class="form-control" name="bemail" id="exampleInputDes1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="phoneHelp"  placeholder="Eg : johndoe@gmail.com" required>
+                                             <input type="email" class="form-control" name="bemail" title="enter valid email" id="exampleInputDes1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="phoneHelp"  placeholder="Eg : johndoe@gmail.com" required>
                                              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                       </div>
                                </div>
                                <div class="col-sm">
                                      <div class="form-group">
                                          <label for="exampleInputName1">PAN Card Number*</label>
-                                          <input type="text" class="form-control" name="bpanno" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Permanent Account Number" required>
+                                          <input type="text" class="form-control" name="bpanno" id="exampleInputName1" aria-describedby="nameHelp" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" title="enter valid PAN number"  placeholder="Permanent Account Number" required>
                                           <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                       </div>
                              </div>
@@ -182,7 +178,7 @@
                                 <div class="col-sm">
                                      <div class="form-group">
                                       <label for="exampleInputPoy1">Pin Code*</label>
-                                      <input type="number" class="form-control" name="bpincode" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Pin Code" required>
+                                      <input type="number" class="form-control" pattern="[0-9]{6}" title="enter 6-digit valid pincode" name="bpincode" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Pin Code" required>
                                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small> -->
                                       </div>
                                  </div>
@@ -209,7 +205,7 @@
                                   <div class="col-sm">
                                            <div class="form-group">
                                                  <label for="exampleInputPasswrd1">Password*</label>
-                                                 <input type="password" class="form-control" name="bpass" id="exampleInputPasswrd1"  placeholder="Enter your password" required>
+                                                 <input type="password" class="form-control" name="bpass" pattern="^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,8}$" title=""Must contain at least one number and one uppercase and lowercase letter, and at least 6 ,atmost 8 characters" id="exampleInputPasswrd1"  placeholder="Eg:Abcd123" required>
                                             </div>
                                    </div>
                                    <div class="col-sm">
