@@ -106,7 +106,7 @@
                        <div class="col-sm">              
                              <div class="form-group">
                                     <label for="exampleInputPoy1">Tender Closing Date*</label>
-                                    <input type="text" class="form-control" name="tcloseDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Closing Date of the Tender" required>
+                                    <input type="text" pattern="([0-2][0-9]|(3)[0-1])[/](((0)[0-9])|((1)[0-2]))[/]\d{4}" class="form-control" name="tcloseDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Closing Date of the Tender" required>
                                      <small id="emailHelp" class="form-text text-muted">Format - DD/MM/YYYY </small> 
                               </div>
                        </div>
@@ -147,7 +147,7 @@
                        <div class="col-sm">              
                              <div class="form-group">
                                     <label for="exampleInputPoy1">Company Name*</label>
-                                    <input type="text" class="form-control" name="tcomp" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Company Name (complete)" required>
+                                    <input type="text" class="form-control" name="tcomp" id="exampleInputPoy1" pattern="[a-zA-Z]{2,}"  aria-describedby="poyHelp"  placeholder="Company Name (complete)" required>
                                      <small id="emailHelp" class="form-text text-muted">The Company that released the Tender.</small> 
                               </div>
                        </div>
@@ -158,14 +158,14 @@
                       <div class="col-sm">
                            <div class="form-group">
                             <label for="exampleInputPoy1">Bid Opening Date*</label>
-                            <input type="text" class="form-control" name="bOpenDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Starting Date of the Bid Process" required>
+                            <input type="text" class="form-control" name="bOpenDate" id="exampleInputPoy1" pattern="([0-2][0-9]|(3)[0-1])[/](((0)[0-9])|((1)[0-2]))[/]\d{4}"  aria-describedby="poyHelp"  placeholder="Starting Date of the Bid Process" required>
                              <small id="emailHelp" class="form-text text-muted">Format - DD/MM/YYYY </small>
                             </div>
                        </div>
                        <div class="col-sm">              
                              <div class="form-group">
                                     <label for="exampleInputPoy1">Expected Cost*</label>
-                                    <input type="text" class="form-control" name="tcost" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Expected Cost of the Tender" required>
+                                    <input type="text" class="form-control" name="tcost" id="exampleInputPoy1" pattern="[1-9][0-9]{2,}"  aria-describedby="poyHelp"  placeholder="Expected Cost of the Tender" required>
                                      <small id="emailHelp" class="form-text text-muted">Currency -INR </small> 
                               </div>
                        </div>
@@ -212,14 +212,14 @@
                 <div class="col-sm">
                          <div class="form-group">
                              <label for="exampleInputName1">Postal Code*</label>
-                              <input type="text" class="form-control" name="tpostalCode" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="PIN Code" required>
+                              <input type="text" class="form-control" pattern="[0-9]{6}" title="enter 6-digit valid code" name="tpostalCode" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="PIN Code" required>
                               <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                           </div>
                  </div>
                  <div class="col-sm">
                     <div class="form-group">
                       <label for="exampleInputPoy1">District*</label>
-                      <input type="text" class="form-control" name="tdist" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="District" required>
+                      <input type="text" class="form-control" pattern="[a-zA-Z]{2,15}" name="tdist" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="District" required>
                     </div>
                  </div> 
                  
