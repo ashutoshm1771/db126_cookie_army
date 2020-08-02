@@ -88,6 +88,13 @@ border-color: #337ab7;
                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                         </div>
                     </div>
+                    <div class="col-sm">
+                             <div class="form-group">
+                                 <label for="exampleInputName1">Aadhar Number*</label>
+                                  <input type="text" class="form-control" name="adhar" pattern="[0-9]{12}" id="exampleInputName1" title="enter valid aadhar number" aria-describedby="nameHelp"  placeholder="Enter your Aadhar Number" required>
+                                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your aadhar number with anyone else.</small> -->
+                              </div>
+                     </div>
                 </div>
             </div>
             <div class="container">
