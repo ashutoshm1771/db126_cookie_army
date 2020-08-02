@@ -22,7 +22,7 @@
 	  });
 	};
   </script>
-  <link rel="stylesheet" href="css/global1.css">
+  <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
 <div class="navbar">
@@ -67,18 +67,7 @@
             <span>
               <a id="link1" name="link1" title="Corrigendum" class="Menu" href="/eprocure/app?page=FrontEndLatestActiveCorrigendums&amp;service=page" target="_self">Corrigendum</a>
           </span>
-          <span class="divider1" id="Insert_2_2">|</span>
-      </span><span id="For_3">
           
-            <span>
-              <a id="link1" name="link1" title="Results of Tenders" class="Menu" href="/eprocure/app?page=ResultOfTenders&amp;service=page" target="_self">Bid Awards</a>
-          </span>
-          <span class="divider1" id="Insert_2_3">|</span>
-      </span><span id="For_4">
-          <span id="If_0_4">
-              <a id="link1" name="link1" title="CPPP Home" class="Menu" href="http://eprocure.gov.in/cppp/" target="_self">CPPP Home</a>
-            </span>
-            
           
       </span>		
 </span>
@@ -88,7 +77,7 @@
 <!--Main starts from here-->	
 <div class="jumbotron" style="width: 50%; margin-left: 500px;"><br>
     <h1 class="display-4" id="header" align="center">Update this Tender</h1> 
-    <div align="right"><a class="btn btn-light btn-lg" href="viewTenderdetail.jsp" role="button">Back</a></div>
+    <div align="right"><a class="btn btn-light btn-lg" href="empPortal.jsp" role="button">Back</a></div>
     <br>
     <hr class="my-4">
     <h3 class="display-6" id="header" align="left">Tender Information</h3><br>
@@ -97,26 +86,27 @@
                   <div class="row">
                       <div class="col-sm">
                                <div class="form-group">
-                                   <label for="exampleInputName1">Tender Title</label>
-                                    <input type="text" class="form-control" name="title" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Enter the tender title">
+                                   <label for="exampleInputName1">Tender Title*</label>
+                                    <input type="text" class="form-control" name="title" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Enter the tender title" required>
                                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                 </div>
                        </div>
+                       
                     </div>
                </div>
                <div class="container">
                   <div class="row">
                       <div class="col-sm">
                            <div class="form-group">
-                            <label for="exampleInputPoy1">Tender Start Date</label>
-                            <input type="text" class="form-control" name="tstartDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Starting Date of the Tender">
+                            <label for="exampleInputPoy1">Tender Start Date*</label>
+                            <input type="text" class="form-control" name="tstartDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Starting Date of the Tender" required>
                              <small id="emailHelp" class="form-text text-muted">Format - DD/MM/YYYY </small>
                             </div>
                        </div>
                        <div class="col-sm">              
                              <div class="form-group">
-                                    <label for="exampleInputPoy1">Tender Closing Date</label>
-                                    <input type="text" class="form-control" name="tcloseDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Closing Date of the Tender">
+                                    <label for="exampleInputPoy1">Tender Closing Date*</label>
+                                    <input type="text" class="form-control" name="tcloseDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Closing Date of the Tender" required>
                                      <small id="emailHelp" class="form-text text-muted">Format - DD/MM/YYYY </small> 
                               </div>
                        </div>
@@ -124,45 +114,9 @@
                </div>
                <div class="container">
                   <div class="row">
-                      <div class="col-sm">
-                           <div class="form-group">
-                            <label for="exampleFormControlFile1">Tender Document</label>
-                            <input type="file" name="tdetails" class="form-control-file" id="exampleFormControlFile1">
-                             <small id="emailHelp" class="form-text text-muted">Format - .pdf</small>
-                            </div>
-                       </div>
-                       <div class="col-sm">              
-                             <div class="form-group">
-                                    <label for="exampleInputPoy1">Company Name</label>
-                                    <input type="text" class="form-control" name="tcomp" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Company Name (complete)" >
-                                     <small id="emailHelp" class="form-text text-muted">The Company that released the Tender.</small> 
-                              </div>
-                       </div>
-                    </div>
-               </div>
-               <div class="container">
-                  <div class="row">
-                      <div class="col-sm">
-                           <div class="form-group">
-                            <label for="exampleInputPoy1">Bid Opening Date</label>
-                            <input type="text" class="form-control" name="bOpenDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Starting Date of the Bid Process" >
-                             <small id="emailHelp" class="form-text text-muted">Format - DD/MM/YYYY </small>
-                            </div>
-                       </div>
-                       <div class="col-sm">              
-                             <div class="form-group">
-                                    <label for="exampleInputPoy1">Expected Cost</label>
-                                    <input type="text" class="form-control" name="tcost" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Expected Cost of the Tender" >
-                                     <small id="emailHelp" class="form-text text-muted">Currency -INR </small> 
-                              </div>
-                       </div>
-                    </div>
-               </div>
-               <div class="container">
-                  <div class="row">
-                      <div class="col-sm">
+                  <div class="col-sm">
                                <div class="form-group">
-                                  <label for="exampleInputPoy1">Class</label>
+                                  <label for="exampleInputPoy1">Class*</label>
                                   <select class="form-control" name="tclass" id="exampleFormControlSelect2">
                                           <option value="Piece-work">Piece-work</option>
                                           <option value="Lump-sum">Lump-sum</option>
@@ -189,23 +143,70 @@
                                   </select>
                                 </div>
                        </div>
+                      
+                       <div class="col-sm">              
+                             <div class="form-group">
+                                    <label for="exampleInputPoy1">Company Name*</label>
+                                    <input type="text" class="form-control" name="tcomp" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Company Name (complete)" required>
+                                     <small id="emailHelp" class="form-text text-muted">The Company that released the Tender.</small> 
+                              </div>
+                       </div>
                     </div>
                </div>
-                <hr class="my-4">
-                <h3 class="display-6" id="header" align="left">Tender Location</h3><br>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <div class="form-group">
-                                <label for="exampleInputPoy1">State</label>
-                                <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="tstate" class="form-control"></select><br>
-                                <label for="exampleInputPoy1">City</label>
-                                <select id ="state" name="tcity" class="form-control"></select>
-                                <script language="javascript">print_state("sts");</script>
+               <div class="container">
+                  <div class="row">
+                      <div class="col-sm">
+                           <div class="form-group">
+                            <label for="exampleInputPoy1">Bid Opening Date*</label>
+                            <input type="text" class="form-control" name="bOpenDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Starting Date of the Bid Process" required>
+                             <small id="emailHelp" class="form-text text-muted">Format - DD/MM/YYYY </small>
                             </div>
-                        </div>
+                       </div>
+                       <div class="col-sm">              
+                             <div class="form-group">
+                                    <label for="exampleInputPoy1">Expected Cost*</label>
+                                    <input type="text" class="form-control" name="tcost" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Expected Cost of the Tender" required>
+                                     <small id="emailHelp" class="form-text text-muted">Currency -INR </small> 
+                              </div>
+                       </div>
                     </div>
-                </div>
+               </div>
+               <div class="container">
+                  <div class="row">
+                  
+                  <div class="col-sm">              
+                             <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Enter Tender Description in less than 200 words.</label>
+                                <textarea class="form-control" name="tenderdescription" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              
+                                     
+                              </div>
+                       </div>
+                      <div class="col-sm">
+                           <div class="form-group">
+                            <label for="exampleFormControlFile1">Tender Document*</label>
+                            <input type="file" name="tdetails" accept=".pdf" class="form-control-file" id="exampleFormControlFile1">
+                             <small id="emailHelp" class="form-text text-muted">Format - .pdf</small>
+                            </div>
+                       </div> 
+                    </div>
+               </div>
+              
+               <hr class="my-4">
+      <h3 class="display-6" id="header" align="left">Tender Location</h3><br>
+               <div class="container">
+                  <div class="row">
+                      <div class="col-sm">
+                           <div class="form-group">
+                            <label for="exampleInputPoy1">State*</label>
+                              <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="tstate" class="form-control" required></select><br>
+                              <label for="exampleInputPoy1">City*</label>
+                              <select id ="state" name="bcity" class="form-control" required></select>
+                              <script language="javascript">print_state("sts");</script>
+                       </div>
+                    </div>
+               </div>
+              </div>
            <div class="container">
             <div class="row">
                 <div class="col-sm">
@@ -217,30 +218,18 @@
                  </div>
                  <div class="col-sm">
                     <div class="form-group">
-                      <label for="exampleInputPoy1">City*</label>
-                      <input type="text" class="form-control" name="bcity" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="City" required>
+                      <label for="exampleInputPoy1">District*</label>
+                      <input type="text" class="form-control" name="tdist" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="District" required>
                     </div>
                  </div> 
                  
               </div>
          </div>
-         <hr class="my-4">
-                <h3 class="display-6" id="header" align="left">Tender Description</h3><br>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Enter Tender Description in less than 200 words.</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
            <hr class="my-4">
            <br>
 
              <div class="text-center">
-            <button type="submit" class="btn btn-primary">Update Tender</button>
+            <button type="submit" class="btn btn-primary">Publish Tender</button>
             </div>
               
           </form>
