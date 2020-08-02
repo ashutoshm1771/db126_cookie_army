@@ -67,17 +67,7 @@
             <span>
               <a id="link1" name="link1" title="Corrigendum" class="Menu" href="/eprocure/app?page=FrontEndLatestActiveCorrigendums&amp;service=page" target="_self">Corrigendum</a>
           </span>
-          <span class="divider1" id="Insert_2_2">|</span>
-      </span><span id="For_3">
           
-            <span>
-              <a id="link1" name="link1" title="Results of Tenders" class="Menu" href="/eprocure/app?page=ResultOfTenders&amp;service=page" target="_self">Bid Awards</a>
-          </span>
-          <span class="divider1" id="Insert_2_3">|</span>
-      </span><span id="For_4">
-          <span id="If_0_4">
-              <a id="link1" name="link1" title="CPPP Home" class="Menu" href="http://eprocure.gov.in/cppp/" target="_self">CPPP Home</a>
-            </span>
             
           
       </span>		
@@ -89,24 +79,28 @@
 
         </div>
 <!--Main starts from here-->	
-		<div class="flex main" style="width: 70%; margin-left: 550px;">
-			<form class="login-form" method="POST" action="empPortal.jsp">
+
+		<div class="flex main" style="width: 150%; margin-left: 500px;">
+			<form class="login-form" method="POST" action="mislogin2.jsp">
                 <div class="card-header"><h2>Nodal Officer Login</h2></div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" name="empid" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1">Login Id</label>
+                    <input type="text" class="form-control" name="username" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" name="emppass" id="exampleInputPassword1">
+                        <input type="password" class="form-control" name="password" id="exampleInputPassword1">
                     </div>
+                    
                             <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-                            &nbsp; &nbsp; <a href="empReg.jsp">New? Register Here!</a><br><br>&nbsp; &nbsp;
+                            &nbsp; &nbsp; <a href="forgetemppass.jsp">Forget Password</a><br><br>&nbsp; &nbsp;
+                            <a href="empReg.jsp">New? Register Here!</a><br><br>&nbsp; &nbsp;
                             <button type="submit" class="btn btn-primary">Login</button>
                             <br><br>
                 </form>
         </div>
+    
 <!--Login starts from here-->	
 		<div class="flex login">
                 
