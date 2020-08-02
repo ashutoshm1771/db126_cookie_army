@@ -84,7 +84,7 @@ border-color: #337ab7;
                     <div class="col-sm">
                         <div class="form-group">
                             <label for="exampleInputReg1">User ID*</label>
-                            <input type="text" class="form-control" name="did" id="exampleInputReg1"  aria-describedby="regHelp"  placeholder="Choose your User ID " required>
+                            <input type="text" class="form-control" pattern="^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$" title="Do not include special symbols other than dot,underscore" name="did" id="exampleInputReg1"  aria-describedby="regHelp"  placeholder="Choose your User ID " required>
                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                         </div>
                     </div>
@@ -95,14 +95,14 @@ border-color: #337ab7;
                     <div class="col-sm">
                         <div class="form-group">
                              <label for="exampleInputReg1">First Name*</label>
-                             <input type="text" class="form-control" name="fname" id="exampleInputReg1"  aria-describedby="regHelp"  placeholder="Enter your first name" required>
+                             <input type="text" class="form-control" name="fname" id="exampleInputReg1"  pattern="[a-zA-Z]{2,25}" title="enter valid name" aria-describedby="regHelp"  placeholder="Enter your first name" required>
                              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                         </div>
                     </div>
                     <div class="col-sm">
                              <div class="form-group">
                                  <label for="exampleInputName1">Last Name*</label>
-                                  <input type="text" class="form-control" name="lname" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Enter your last name" required>
+                                  <input type="text" class="form-control" name="lname" pattern="[a-zA-Z]{1,20}" id="exampleInputName1" title="enter valid name" aria-describedby="nameHelp"  placeholder="Enter your last name" required>
                                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                               </div>
                      </div>
@@ -113,7 +113,7 @@ border-color: #337ab7;
                     <div class="col-sm">
                              <div class="form-group">
                                    <label for="exampleInputPasswrd1">Password*</label>
-                                   <input type="password" class="form-control" name="spass" id="exampleInputPasswrd1"  placeholder="Enter your password" required>
+                                   <input type="password" class="form-control" name="spass" id="exampleInputPasswrd1" pattern="^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,8}$" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 ,atmost 8 characters" placeholder="Enter your password" required>
                               </div>
                      </div>
                      <div class="col-sm">
