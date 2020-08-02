@@ -190,23 +190,6 @@
                        </div>
                       <div class="col-sm">
                            <div class="form-group">
-                            <label for="exampleFormControlFile1">Tender Status*</label>
-                            <select class="form-control" name="tenderstatus" id="exampleFormControlSelect2">
-                                          <option value="Active">Active</option>
-                                          <option value="Cancelled">Cancelled</option>
-                                          <option value="Corrected">Corrected</option>
-                                          <option value="Occupied">Occupied</option>
-                                          <option value="Retendered">Retendered</option>
-                                  </select>
-                            </div>
-                       </div> 
-                    </div>
-               </div>
-               <div class="container">
-                  <div class="row">
-                
-                      <div class="col-sm">
-                           <div class="form-group">
                             <label for="exampleFormControlFile1">Tender Document*</label>
                             <input type="file" name="tdetails" accept=".pdf" class="form-control-file" id="exampleFormControlFile1">
                              <small id="emailHelp" class="form-text text-muted">Format - .pdf</small>
@@ -214,6 +197,7 @@
                        </div> 
                     </div>
                </div>
+              
                <hr class="my-4">
       <h3 class="display-6" id="header" align="left">Tender Location</h3><br>
                <div class="container">
