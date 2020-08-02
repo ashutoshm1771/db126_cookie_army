@@ -67,17 +67,7 @@
             <span>
               <a id="link1" name="link1" title="Corrigendum" class="Menu" href="/eprocure/app?page=FrontEndLatestActiveCorrigendums&amp;service=page" target="_self">Corrigendum</a>
           </span>
-          <span class="divider1" id="Insert_2_2">|</span>
-      </span><span id="For_3">
           
-            <span>
-              <a id="link1" name="link1" title="Results of Tenders" class="Menu" href="/eprocure/app?page=ResultOfTenders&amp;service=page" target="_self">Bid Awards</a>
-          </span>
-          <span class="divider1" id="Insert_2_3">|</span>
-      </span><span id="For_4">
-          <span id="If_0_4">
-              <a id="link1" name="link1" title="CPPP Home" class="Menu" href="http://eprocure.gov.in/cppp/" target="_self">CPPP Home</a>
-            </span>
             
           
       </span>		
@@ -116,11 +106,11 @@
                         <div class="card-body">
                             <%	
 							Class.forName("com.mysql.jdbc.Driver");
-							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
+							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/etendering","root","tulasidevi@11");
                             Statement st = con.createStatement();
                             String key=request.getParameter("keyword");
 							ResultSet rs;
-							rs = st.executeQuery("select * from tenders where tenderTitle like '%key%' and tenderDescription like '%key%'");
+							rs = st.executeQuery("select * from tenderdetails where tendertitle like '%"+key+"%' or tenderdescription like '%"+key+"%'");
 							while(rs.next())
 							{
 							out.print
