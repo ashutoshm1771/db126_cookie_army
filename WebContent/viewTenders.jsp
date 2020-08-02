@@ -22,7 +22,7 @@
 	  });
 	};
   </script>
-  <link rel="stylesheet" href="css/global1.css">
+  <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
 <div class="navbar">
@@ -106,13 +106,25 @@
             <p class="card-text">
                 <%	
                     Class.forName("com.mysql.jdbc.Driver");
-                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
+                    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/etendering","root","tulasidevi@11");
                     Statement st = con.createStatement();
                     ResultSet rs;
-                    rs = st.executeQuery("select * from tenderdetails where empId='SESSIONVARIABLE EMPID'");
+                    rs = st.executeQuery("select * from tenderdetails where empid='"+session.getAttribute("eusername")+"'");
                     while(rs.next())
                     {
-                    out.print
+                    	
+                    	%>
+                    	<div class='home-container-1'>
+                              
+                                                    <div class='flex item-1'><a href='viewTenderdetail.jsp?id=<%=rs.getString(2)%>'><%= rs.getString(1)%></a></div>
+                                                    <div class='flex item-2'><%=rs.getString(2)%></div>
+                                                    <div class='flex item-3'><%= rs.getString(3)%></div>
+                                                    <div class='flex item-4'><%= rs.getString(4)%></div>
+                                                </div>
+                    	
+                    	
+                    	<% 
+                /*    out.print
                     (
                             "<div class='home-container-1'>"+
                                     "<div class='flex item-1'><a href='viewTenderdetail.jsp'>"+rs.getString(1)+"</a></div>"+
@@ -121,6 +133,8 @@
                                     "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
                                 "</div>"
                         );
+                    */    
+                        
                     }
                     
                 %>
@@ -130,8 +144,8 @@
 <!--Login starts from here-->	
 		
 
-<footer class="footer-box">
-    <div class="container">
+<footer class="footer-box" >
+    <div class="container" >
       <span class="text-muted">Contents owned and maintained by concerned Departments in coordination with Finance Department and Information Technology Department, Government of India.</span>
     </div>
   </footer>
