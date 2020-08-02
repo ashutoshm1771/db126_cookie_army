@@ -67,7 +67,7 @@
             <span>
               <a id="link1" name="link1" title="Corrigendum" class="Menu" href="/eprocure/app?page=FrontEndLatestActiveCorrigendums&amp;service=page" target="_self">Corrigendum</a>
           </span>
-          <span class="divider1" id="Insert_2_2">|</span>
+   <!--        <span class="divider1" id="Insert_2_2">|</span>
       </span><span id="For_3">
           
             <span>
@@ -79,7 +79,7 @@
               <a id="link1" name="link1" title="CPPP Home" class="Menu" href="http://eprocure.gov.in/cppp/" target="_self">CPPP Home</a>
             </span>
             
-          
+          -->
       </span>		
 </span>
 </div>
@@ -95,7 +95,7 @@
 		<input type="button" class="links" value="Announcements" onclick="window.location.href = 'announcement.jsp';"></button><br>
 		<input type="button" class="links" value="Cancelled/Retendered" onclick="window.location.href = 'cancelled.jsp';"></button><br>
     </div>
-<% session.removeAttribute("username"); %>
+
 <!--Main starts from here-->	
 		<div class="flex main">
 			<div class="jumbotron">
@@ -108,11 +108,8 @@
                         <div class="row">
                             <div class="col-sm">
                                  <div class="form-group">
-                                  <label for="exampleInputPoy1">State*</label>
-                                    <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="tstate" class="form-control" ></select><br>
-                                    <label for="exampleInputPoy1">City*</label>
-                                    <select id ="state" name="tcity" class="form-control" ></select>
-                                    <script language="javascript">print_state("sts");</script>
+                                  <label for="exampleInputPoy1">Location*</label>
+                                    <input type="text" class="form-control" name="location" id="exampleInputClg1"  aria-describedby="colHelp" placeholder="Enter Location" required>
                              </div>
                           </div>
                      </div>
