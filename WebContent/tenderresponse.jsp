@@ -90,7 +90,7 @@
 </span>
 </div>
     
-<div class="jumbotron" style="width: 50%; margin-left: 500px;"><br>
+<div class="jumbotron" style="width: 50%; margin-left: 480px;"><br>
     <div align="text-center"><h2>RESPONSE TO TENDER</h2></div>
 			<td class="page_content" valign="top">
 							<!-- Page content starts here -->
@@ -260,6 +260,13 @@
       <span class="text-muted">Contents owned and maintained by concerned Departments in coordination with Finance Department and Information Technology Department, Government of India.</span>
     </div>
   </footer>
+  <script type="text/javascript">
+    // Popup window code
+    function newPopup(url) {
+        popupWindow = window.open(
+            url,'popUpWindow','height=800,width=1000,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+    }
+    </script>
 <script>
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
