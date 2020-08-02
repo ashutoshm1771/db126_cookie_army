@@ -67,7 +67,7 @@
             <span>
               <a id="link1" name="link1" title="Corrigendum" class="Menu" href="/eprocure/app?page=FrontEndLatestActiveCorrigendums&amp;service=page" target="_self">Corrigendum</a>
           </span>
-          <span class="divider1" id="Insert_2_2">|</span>
+ <!--          <span class="divider1" id="Insert_2_2">|</span>
       </span><span id="For_3">
           
             <span>
@@ -78,7 +78,7 @@
           <span id="If_0_4">
               <a id="link1" name="link1" title="CPPP Home" class="Menu" href="http://eprocure.gov.in/cppp/" target="_self">CPPP Home</a>
             </span>
-            
+           -->
           
       </span>		
 </span>
@@ -94,6 +94,7 @@
 		<input type="button" class="links" value="Tenders in Archive" onclick="window.location.href = 'tendersInArchive.jsp';"></button><br>
 		<input type="button" class="links" value="Announcements" onclick="window.location.href = 'announcement.jsp';"></button><br>
 		<input type="button" class="links" value="Cancelled/Retendered" onclick="window.location.href = 'cancelled.jsp';"></button><br>
+    	
     </div>
 <% session.removeAttribute("username"); %>
 <!--Main starts from here-->	
