@@ -73,18 +73,6 @@
             <span>
               <a id="link1" name="link1" title="Corrigendum" class="Menu" href="/eprocure/app?page=FrontEndLatestActiveCorrigendums&amp;service=page" target="_self">Corrigendum</a>
           </span>
-          <span class="divider1" id="Insert_2_2">|</span>
-      </span><span id="For_3">
-          
-            <span>
-              <a id="link1" name="link1" title="Results of Tenders" class="Menu" href="/eprocure/app?page=ResultOfTenders&amp;service=page" target="_self">Bid Awards</a>
-          </span>
-          <span class="divider1" id="Insert_2_3">|</span>
-      </span><span id="For_4">
-          <span id="If_0_4">
-              <a id="link1" name="link1" title="CPPP Home" class="Menu" href="http://eprocure.gov.in/cppp/" target="_self">CPPP Home</a>
-            </span>
-            
           
       </span>		
 </span>
@@ -117,7 +105,28 @@
 				
 					<div class="card-body">
 					<marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> <p class="card-text">
-						p
+						<%	
+							Class.forName("com.mysql.jdbc.Driver");
+							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/etendering","root","tulasidevi@11");
+							Statement st = con.createStatement();
+							ResultSet rs;
+							rs = st.executeQuery("select * from tenderdetails ");
+							while(rs.next())
+							{
+							out.print
+							(
+									"<div class='home-container-1'>"+
+					                        "<div class='flex item-1'>"+rs.getString(1)+"</div>"+
+					                        "<div class='flex item-2'>"+rs.getString(2)+"</div>"+
+					                        "<div class='flex item-3'>"+rs.getString(3)+"</div>"+
+					                        "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
+					                    "</div>"
+								);
+							}
+							
+							con.close();
+						%>
+
 					</p></marquee>
 					</div>
 			</div><br>
@@ -134,7 +143,27 @@
 				
 					<div class="card-body">
 					<marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> <p class="card-text">
-						o
+						<%	
+							Class.forName("com.mysql.jdbc.Driver");
+							Connection con1 = DriverManager.getConnection("jdbc:mysql://localhost:3307/etendering","root","tulasidevi@11");
+							Statement st1 = con1.createStatement();
+							ResultSet rs1;
+							rs1 = st1.executeQuery("select * from tenderdetails where classification=\"work\"");
+							while(rs1.next())
+							{
+							out.print
+							(
+									"<div class='home-container-1'>"+
+					                        "<div class='flex item-1'>"+rs1.getString(1)+"</div>"+
+					                        "<div class='flex item-2'>"+rs1.getString(2)+"</div>"+
+					                        "<div class='flex item-3'>"+rs1.getString(3)+"</div>"+
+					                        "<div class='flex item-4'>"+rs1.getString(4)+"</div>"+
+					                    "</div>"
+								);
+							}
+							con1.close();
+						%>
+
 					</p></marquee>
 					</div>
 			</div>
@@ -153,7 +182,8 @@
                             <input type="password" class="form-control" name="bpass" id="exampleInputPassword1">
                         </div>
                                 <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-                                &nbsp; &nbsp; <a href="bidReg.jsp">New User? Register Here!</a><br><br>&nbsp; &nbsp;
+                                &nbsp; &nbsp; <a href="bidderForgetPass.jsp">Forget Password</a><br><br>&nbsp; &nbsp;
+                                <a href="bidderReg.jsp">New User? Register Here!</a><br><br>&nbsp; &nbsp;
                                 <a href="onlineBidderEnrollment.jsp">Online Bidder Enrollment</a><br><br>&nbsp; &nbsp;
                                 <button type="submit" class="btn btn-primary">Login</button>
                                 <br><br>
