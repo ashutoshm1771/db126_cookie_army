@@ -73,18 +73,6 @@
             <span>
               <a id="link1" name="link1" title="Corrigendum" class="Menu" href="/eprocure/app?page=FrontEndLatestActiveCorrigendums&amp;service=page" target="_self">Corrigendum</a>
           </span>
-          <span class="divider1" id="Insert_2_2">|</span>
-      </span><span id="For_3">
-          
-            <span>
-              <a id="link1" name="link1" title="Results of Tenders" class="Menu" href="/eprocure/app?page=ResultOfTenders&amp;service=page" target="_self">Bid Awards</a>
-          </span>
-          <span class="divider1" id="Insert_2_3">|</span>
-      </span><span id="For_4">
-          <span id="If_0_4">
-              <a id="link1" name="link1" title="CPPP Home" class="Menu" href="http://eprocure.gov.in/cppp/" target="_self">CPPP Home</a>
-            </span>
-            
           
       </span>		
 </span>
@@ -164,9 +152,9 @@
 																						</td>																																																										
 																					</tr>
 																					<tr>
-																						<td class="td_caption" width="15%">GRAND TOTAL:<span class="mandatory">#</span></td>
+																						<td class="td_caption" width="15%"> TOTAL AMOUNT:<span class="mandatory">#</span></td>
 																						<td class="td_caption" width="50%" colspan="3">
-																							<input type="text" name="quotationRefNo" value="" id="qutationRefNo" style="width:150px;" maxlength="30">
+																							<input type="text" name="amount" value="" id="qutationRefNo" style="width:150px;" maxlength="30">
 																						</td>
 																						
 																																							<tr>																									
