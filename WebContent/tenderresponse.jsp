@@ -214,7 +214,7 @@
 																					<center><div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><center><br>
 		
 																						<div class="text-center">
-																					  <button type="submit" class="btn btn-primary">Submit</button>
+																					  <button type="submit" onclick=location.href="tenderresponse2.jsp" class="btn btn-primary">Submit</button>
 																					  </div>
 																				</td>
 																			</tr>
