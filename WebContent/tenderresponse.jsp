@@ -91,7 +91,8 @@
 </div>
     
 <div class="jumbotron" style="width: 50%; margin-left: 480px;"><br>
-    <div align="text-center"><h2>RESPONSE TO TENDER</h2></div>
+	<div align="text-center"><h2>RESPONSE TO TENDER</h2></div>
+	<form action="#" method="POST">
 			<td class="page_content" valign="top">
 							<!-- Page content starts here -->
 	<table width="100%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -245,17 +246,10 @@
 										</td>
 									</tr>
 								</tbody></table>
-							</td>
-						</tr>								
-					</tbody></table>
-					<!-- End : Content Area -->
-			</td>
-		</tr>
-	</tbody></table>
-</form>	
+
 
 							<!-- Page content ends here -->	
-							</td>
+							</td> </form>
 </div>
 
 </div>
