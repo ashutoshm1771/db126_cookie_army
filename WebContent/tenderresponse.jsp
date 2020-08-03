@@ -73,6 +73,18 @@
             <span>
               <a id="link1" name="link1" title="Corrigendum" class="Menu" href="/eprocure/app?page=FrontEndLatestActiveCorrigendums&amp;service=page" target="_self">Corrigendum</a>
           </span>
+          <span class="divider1" id="Insert_2_2">|</span>
+      </span><span id="For_3">
+          
+            <span>
+              <a id="link1" name="link1" title="Results of Tenders" class="Menu" href="/eprocure/app?page=ResultOfTenders&amp;service=page" target="_self">Bid Awards</a>
+          </span>
+          <span class="divider1" id="Insert_2_3">|</span>
+      </span><span id="For_4">
+          <span id="If_0_4">
+              <a id="link1" name="link1" title="CPPP Home" class="Menu" href="http://eprocure.gov.in/cppp/" target="_self">CPPP Home</a>
+            </span>
+            
           
       </span>		
 </span>
@@ -104,7 +116,7 @@
 															<table width="100%" cellpadding="0" cellspacing="0">
 																<tbody><tr>
 																	<td valign="bottom" class="pageheader" align="left">Tender Status</td>
-																	<td align="right" width="80"><a id="PageLink_14" title="Back" class="customButton_link" value="Back" href="tenderslist.jsp">Back</a></td>
+																	<td align="right" width="80"><a id="PageLink_14" title="Back" class="customButton_link" value="Back" href="tenderlist.jsp">Back</a></td>
 																</tr>
 															</tbody></table>
 														</td>
@@ -152,9 +164,9 @@
 																						</td>																																																										
 																					</tr>
 																					<tr>
-																						<td class="td_caption" width="15%"> TOTAL AMOUNT:<span class="mandatory">#</span></td>
+																						<td class="td_caption" width="15%">GRAND TOTAL:<span class="mandatory">#</span></td>
 																						<td class="td_caption" width="50%" colspan="3">
-																							<input type="text" name="amount" value="" id="qutationRefNo" style="width:150px;" maxlength="30">
+																							<input type="text" name="quotationRefNo" value="" id="qutationRefNo" style="width:150px;" maxlength="30">
 																						</td>
 																						
 																																							<tr>																									
@@ -197,7 +209,12 @@
 																			
 																			
 																			<tr>
-																				<td colspan="6" class="notes">Read the terms and conditions carefully and upload the documents .
+																				<td colspan="6" class="notes">Read the terms and conditions carefully and upload the documents .<br><br><br>
+																					<center><div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><center><br>
+		
+																						<div class="text-center">
+																					  <button type="submit" class="btn btn-primary">Submit</button>
+																					  </div>
 																				</td>
 																			</tr>
 																			<tr>
