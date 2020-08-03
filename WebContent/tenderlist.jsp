@@ -121,7 +121,7 @@
                                                                         <% 	
                                                                         session.getAttribute("username");
                                                                                 Class.forName("com.mysql.jdbc.Driver");
-                                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
+                                        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/etendering","root","tulasidevi@11");
                                         Statement st = con.createStatement();
                                         ResultSet rs;
                                         rs = st.executeQuery("select * from tenderdetails ");
@@ -137,8 +137,7 @@
                                             <td width="30%" align="center" class='tid'>
                                             <div class="dropdown">  <button class="dropbtn" >PROCEED HERE</button><div class="dropdown-content">
                                       <a href="tenderletter.jsp?id=<%=rs.getString(2) %>" >View tender letter</a> 
-                                        <a href="tenderletter.jsp">View tender letter</a>
-                                            <a href="tenderresponse.jsp">Respond to Tender</a>
+                                            <a href="onlineBidderEnrollment.jsp?id=<%=rs.getString(2) %>">Respond to Tender</a>
                                             </div></div></td></tr>
                                             
             
