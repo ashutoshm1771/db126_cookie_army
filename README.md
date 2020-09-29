@@ -16,4 +16,4 @@ Teja Krishna<br>
 Ashutosh Mishra<br>
 <hr>
 ScreenShots
-<img src="ScreenShots/1.jpeg">
+<img src="ScreenShots/1.png">
